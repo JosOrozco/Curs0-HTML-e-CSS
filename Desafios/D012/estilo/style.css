@@ -33,6 +33,10 @@ header{
     font-variant: small-caps;
 }
 
+header >h1:hover{
+    color: greenyellow;
+}
+
 header > p {
     padding-bottom: 50px;
 }
@@ -55,10 +59,13 @@ section{
     font-family: var(--fonte3);
     font-size: 4vw;
 }
-
+section > p {
+    padding-bottom: 2em;
+}
 section.imagen > p{
     display:inline-block;
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: rgba(0, 0, 0, 0.527);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.479);
 }
 
 section.normal{
@@ -67,10 +74,23 @@ section.normal{
 }
 
 section.imagen{
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(0, 0, 0, 0.753);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+section#img01{
+  background-image: url('../imagens/background001.jpg');
+  background-position: right center;
+  
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+  
+}
 footer{
     background-color: black;
     color:white;
